@@ -1,0 +1,25 @@
+include *.rst
+include LICENSE
+include Makefile
+include manage.py
+include tox.ini
+
+exclude .bumpversion.cfg
+exclude .editorconfig
+exclude pep257.sh
+
+recursive-include docs *.rst .gitkeep conf.py Makefile make.bat
+recursive-include requirements *.pip
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+graft dezentrale_web
+graft tests
+
+prune envs
+prune dezentrale_web/.cache
+prune dezentrale_web/media
+include dezentrale_web/media/.gitkeep
+prune dezentrale_web/static_root
+include dezentrale_web/static_root/.gitkeep
