@@ -128,17 +128,6 @@ class Common(Configuration):
         #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
     ])
 
-    MIDDLEWARE_CLASSES = values.ListValue([
-        'django.contrib.sessions.middleware.SessionMiddleware',
-        'django.middleware.common.CommonMiddleware',
-        'django.middleware.csrf.CsrfViewMiddleware',
-        'django.contrib.auth.middleware.AuthenticationMiddleware',
-        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-        'django.contrib.messages.middleware.MessageMiddleware',
-        'django.middleware.clickjacking.XFrameOptionsMiddleware',
-        'django.middleware.security.SecurityMiddleware',
-    ])
-
     ROOT_URLCONF = 'dezentrale_web.config.urls'
 
     WSGI_APPLICATION = 'dezentrale_web.config.wsgi.application'
@@ -177,7 +166,41 @@ class Common(Configuration):
         os.path.join(BaseDir.BASE_DIR, 'fixtures'),
     )
 
+    MIDDLEWARE = [
+        'django.contrib.sessions.middleware.SessionMiddleware',
+        'django.middleware.common.CommonMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+        'django.contrib.messages.middleware.MessageMiddleware',
+        'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        'django.middleware.security.SecurityMiddleware',
+
+        'wagtail.wagtailcore.middleware.SiteMiddleware',
+        'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+    ]
+
     INSTALLED_APPS = (
+        # Custom
+        'dezentrale_web.apps.wagtail_search',
+
+        # Wagtail
+        'wagtail.wagtailforms',
+        'wagtail.wagtailredirects',
+        'wagtail.wagtailembeds',
+        'wagtail.wagtailsites',
+        'wagtail.wagtailusers',
+        'wagtail.wagtailsnippets',
+        'wagtail.wagtaildocs',
+        'wagtail.wagtailimages',
+        'wagtail.wagtailsearch',
+        'wagtail.wagtailadmin',
+        'wagtail.wagtailcore',
+
+        'modelcluster',
+        'taggit',
+
+        # Regular Django
         'django.contrib.auth',
         'django.contrib.contenttypes',
         'django.contrib.sessions',
@@ -189,6 +212,7 @@ class Common(Configuration):
         'django.contrib.admindocs',
         'crispy_forms',
         'rules.apps.AutodiscoverRulesConfig',
+
     )
 
     CACHES = values. DictValue({
@@ -206,3 +230,6 @@ class Common(Configuration):
     DEFAULT_FROM_EMAIL = values.EmailValue('wladi.schneider13@googlemail.com')
 
     SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
+    # Wagtail settings
+    WAGTAIL_SITE_NAME = "dezentrale.space"

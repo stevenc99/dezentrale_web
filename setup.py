@@ -30,6 +30,7 @@ requires = [
     'django-crispy-forms==1.5.2',
     'django-grappelli==2.7.2',
     'django-model-utils==2.4',
+    'wagtail==1.11.1',
     'envdir==0.7',
     'psycopg2==2.6.1',
     'pytz==2015.7',
