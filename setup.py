@@ -23,7 +23,7 @@ extras_require = {
 }
 
 requires = [
-    'Django==1.8.7',
+    'Django==1.11.4',
     'dj-database-url==0.3.0',
     'django-braces==1.8.1',
     'django-configurations==1.0',
@@ -52,7 +52,7 @@ setup(
     classifiers=[
         'Framework :: Django',
         'Intended Audience :: Developers',
-        
+
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
