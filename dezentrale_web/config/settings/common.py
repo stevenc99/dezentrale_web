@@ -26,7 +26,7 @@ class Common(Configuration):
     MAIL_ADMINS = values.BooleanValue(False)
 
     ADMINS = AdminsValue(
-        (('dezentrale', '-'),)
+        (('dezentrale', 'admin@dezentrale.space'),)
     )
     MANAGERS = ADMINS
 
