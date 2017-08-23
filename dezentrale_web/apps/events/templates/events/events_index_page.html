@@ -1,0 +1,10 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+<ul>
+  {% for child in self.get_children %}
+  <li><a href="{{ child.get_url }}">{{ child.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock content %}
