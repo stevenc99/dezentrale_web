@@ -9,6 +9,7 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
 from dezentrale_web.apps.wagtail_search import views as search_views
+from dezentrale_web.apps.base import views as base_views
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
@@ -17,6 +18,7 @@ urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^search/$', search_views.search, name='search'),
+    url(r'^events/$', base_views.home),
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
     # the list:
