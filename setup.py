@@ -28,7 +28,7 @@ requires = [
     'django-braces==1.8.1',
     'django-configurations==1.0',
     'django-crispy-forms==1.5.2',
-    'django-grappelli==2.7.2',
+    'django-grappelli==2.10.1',
     'django-model-utils==2.4',
     'wagtail==1.11.1',
     'envdir==0.7',
