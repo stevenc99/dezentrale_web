@@ -21,6 +21,6 @@ urlpatterns = [
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
     # the list:
-    url(r'wagtail', include(wagtail_urls))
+    url(r'^wagtail', include(wagtail_urls)),
     url(r'', temp_views.default),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
