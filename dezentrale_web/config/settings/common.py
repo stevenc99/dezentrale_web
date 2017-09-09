@@ -183,6 +183,7 @@ class Common(Configuration):
     INSTALLED_APPS = (
         # Custom
         'dezentrale_web.apps.wagtail_search',
+        'dezentrale_web.apps.events',
 
         # Wagtail
         'wagtail.wagtailforms',
