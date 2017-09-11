@@ -137,7 +137,7 @@ class Common(Configuration):
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
             'DIRS': [\
             os.path.join(BaseDir.BASE_DIR, 'templates'),\
-            os.path.join(BaseDir.BASE_DIR, 'TempPages/templates'),],
+            os.path.join(BaseDir.BASE_DIR, 'TempPages/templates/TempPages/'),],
             'APP_DIRS': True,
             'OPTIONS': {
                 'context_processors': [
