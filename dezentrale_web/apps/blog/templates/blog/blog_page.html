@@ -1,0 +1,15 @@
+{% load wagtailcore_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <p>{{ page.content }}</p>
+    <p>{{ page.latest_revision_created_at }}</p>
+    <p>{{ page.author }}</p>
+    <a href="{{ page.get_parent.url }}">Back</a>
+  </body>
+</html>
