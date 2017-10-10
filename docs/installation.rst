@@ -111,18 +111,6 @@ versions to use:
     The first version passed to :program:`pyenv local` will be the main version
     used for the project.
 
-PostgreSQL
-----------
-
-Check if PostgreSQL is installed:
-
-::
-
-    $ psql --version
-
-If not, `download <http://www.postgresql.org/download/>`_ and install it for
-your operating system.
-
 EditorConfig
 ------------
 
@@ -190,30 +178,6 @@ development environment.
 
 Create the database
 -------------------
-
-Then create the new PostgreSQL user and database:
-
-::
-
-    $ make create-db-user
-    $ make create-db
-
-.. note::
-
-    You may need to run :command:`make create-db-user` as a PostgreSQL superuser:
-
-    ::
-
-        $ sudo -u postgres make create-db-user
-
-.. note::
-
-    You may have to edit the PostgreSQL permissions in :file:`pg_hba.conf` by
-    adding a line as follows after the ``postgres`` user line:
-
-    ::
-
-        local      dezentrale_web   dezentrale_web   md5
 
 Now it's the time to create the database tables:
 

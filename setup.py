@@ -32,7 +32,6 @@ requires = [
     'django-model-utils==2.4',
     'wagtail==1.11.1',
     'envdir==0.7',
-    #'psycopg2==2.6.1',
     'pytz==2015.7',
     'rules==1.1.1',
 ]
