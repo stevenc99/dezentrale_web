@@ -82,35 +82,6 @@ either install or upgrade it:
     If you installed :program:`virtualenvwrapper` for the first time, take your
     time to read the installation documentation.
 
-pyenv
------
-
-This project will be tested with different Python versions. You should install
-`pyenv <https://github.com/yyuu/pyenv>`_ to make the installation of different
-Python versions as easy as possible.
-
-Also install `pyenv-virtualenvwrapper <https://github.com/yyuu/pyenv-
-virtualenvwrapper>`_, a :program:`pyenv` plugin which provides a
-:program:`pyenv virtualenvwrapper` command to manage your virtualenvs with
-virtualenvwrapper.
-
-After you have installed and configured :program:`pyenv` and the plugin you can
-use the following command in the root of the project to configure the Python
-versions to use:
-
-::
-
-    $ pyenv local 3.4.3 2.7.9
-
-.. note::
-
-    You first have to install the Python versions you want to use using
-    :program:`pyenv install`. :program:`pyenv install -l` lists all available
-    versions.
-
-    The first version passed to :program:`pyenv local` will be the main version
-    used for the project.
-
 EditorConfig
 ------------
 
