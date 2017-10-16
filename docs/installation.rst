@@ -122,7 +122,7 @@ read the file format and adhere to the defined styles.
 Development Setup
 =================
 
-Git and git-flow
+Git 
 ----------------
 
 Clone the repository using `Git <https://git-scm.com/>`_:
@@ -137,26 +137,6 @@ Then change into the cloned repository:
 
     $ cd dezentrale_web
 
-We are using `git-flow <https://github.com/nvie/gitflow/>`_, a set of git
-extensions for a branching model introduced by Vincent Driessen. You can read
-more about it on `Vincent's blog
-<http://nvie.com/posts/a-successful-git-branching-model/>`_, where you can also
-find a `high-quality PDF illustrating the model
-<http://nvie.com/files/Git-branching-model.pdf>`_. For your daily workflow
-there also the `git-flow cheatsheet
-<https://danielkummer.github.io/git-flow-cheatsheet/>`_ created by Daniel
-Kummer, which is very helpful.
-
-If you havn't installed git-flow, `do it now
-<https://danielkummer.github.io/git-flow-cheatsheet/#setup>`_!
-
-So the next step is to initialize your repository clone with git-flow. You can
-choose the default for all questions being asked during the initialzaion
-(simply press :kbd:`Enter` on every question):
-
-::
-
-    $ git-flow init
 
 Install Python packages
 -----------------------
