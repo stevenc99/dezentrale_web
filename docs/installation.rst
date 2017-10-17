@@ -98,8 +98,9 @@ First, create a virtual environment for the project:
 It must not be located in the dezentrale_web project directory.
 
 Make sure that every time you are working on the project, you're working from within your virtualenv.
+
 If you're working with venv for the first time, take your time to read the `documentation
-<https://docs.python.org/3/library/venv.html/>`_.
+<https://docs.python.org/3/library/venv.html>`_.
 
 
 EditorConfig
