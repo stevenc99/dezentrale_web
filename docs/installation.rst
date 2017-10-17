@@ -97,6 +97,8 @@ First, create a virtual environment for the project:
 <DIR> can be located wherever it suits you (probably somewhere in your home directory).
 It must not be located in the dezentrale_web project directory.
 
+Make sure that every time you are working on the project, you're working from within your virtualenv.
+
 
 EditorConfig
 ------------
