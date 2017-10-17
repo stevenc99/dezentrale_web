@@ -82,6 +82,22 @@ either install or upgrade it:
     If you installed :program:`virtualenvwrapper` for the first time, take your
     time to read the installation documentation.
 
+venv
+----
+
+If you have the latest version of Python installed (as you should) you also have venv
+installed, since it is included by default in Python 3.3 and higher.
+
+First, create a virtual environment for the project:
+
+::
+
+    $ python3 -m venv <DIR>
+
+<DIR> can be located wherever it suits you (probably somewhere in your home directory).
+It must not be located in the dezentrale_web project directory.
+
+
 EditorConfig
 ------------
 
@@ -93,7 +109,7 @@ read the file format and adhere to the defined styles.
 Development Setup
 =================
 
-Git 
+Git
 ----------------
 
 Clone the repository using `Git <https://git-scm.com/>`_:
@@ -112,11 +128,11 @@ Then change into the cloned repository:
 Install Python packages
 -----------------------
 
-First create a new virtualenv for the project using virtualenvwrapper:
+First activate the new virtualenv you created earlier for the project using venv:
 
 ::
 
-    $ mkvirtualenv -a `pwd` dezentrale_web
+    $ source <DIR>/bin/activate
 
 Now you can install the packages for development:
 
