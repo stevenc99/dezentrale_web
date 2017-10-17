@@ -66,21 +66,6 @@ When the bootstrap script has been downloaded execute it to install
 
     $ python get-pip.py
 
-virtualenvwrapper
------------------
-
-Make sure you have installed the latest version of `virtualenvwrapper
-<https://virtualenvwrapper.readthedocs.org/>`_. You can use :program:`pip` to
-either install or upgrade it:
-
-::
-
-    $ pip install -U virtualenvwrapper
-
-.. note::
-
-    If you installed :program:`virtualenvwrapper` for the first time, take your
-    time to read the installation documentation.
 
 venv
 ----
