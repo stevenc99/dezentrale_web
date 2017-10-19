@@ -1,6 +1,8 @@
 from django.db import models
 from wagtail.wagtailcore.models import Page
-from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.wagtailadmin.edit_handlers import FieldPanel, StreamFieldPanel
+from wagtail.wagtailcore.fields import StreamField
+from wagtail.wagtailcore import blocks
 
 
 class BlogIndexPage(Page):
@@ -14,11 +16,14 @@ class BlogIndexPage(Page):
 
 
 class BlogPage(Page):
-    content = models.TextField()
+    content = StreamField([
+        ('heading', blocks.CharBlock(classname="full title")),
+        ('paragraph', blocks.RichTextBlock()),
+    ])
     author = models.CharField(max_length=255, blank=True)
 
     content_panels = Page.content_panels + [
-        FieldPanel('content'),
+        StreamFieldPanel('content'),
         FieldPanel('author', classname="full"),
     ]
 
