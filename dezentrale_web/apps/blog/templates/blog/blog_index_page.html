@@ -12,6 +12,7 @@
       {% for entry in page.get_children.live %}
           <li>
           <a href="{% pageurl entry %}">{{ entry.title }}</a>
+          <p>{{ entry.introduction }}</p>
           </li>
       {% endfor %}
     {% else %}

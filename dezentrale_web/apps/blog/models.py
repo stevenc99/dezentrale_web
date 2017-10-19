@@ -16,6 +16,7 @@ class BlogIndexPage(Page):
 
 
 class BlogPage(Page):
+    introduction = models.CharField(max_length=300, blank=True)
     content = StreamField([
         ('heading', blocks.CharBlock(classname="full title")),
         ('paragraph', blocks.RichTextBlock()),
@@ -23,6 +24,7 @@ class BlogPage(Page):
     author = models.CharField(max_length=255, blank=True)
 
     content_panels = Page.content_panels + [
+        FieldPanel('introduction'),
         StreamFieldPanel('content'),
         FieldPanel('author', classname="full"),
     ]
