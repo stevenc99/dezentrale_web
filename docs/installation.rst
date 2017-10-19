@@ -66,21 +66,27 @@ When the bootstrap script has been downloaded execute it to install
 
     $ python get-pip.py
 
-virtualenvwrapper
------------------
 
-Make sure you have installed the latest version of `virtualenvwrapper
-<https://virtualenvwrapper.readthedocs.org/>`_. You can use :program:`pip` to
-either install or upgrade it:
+venv
+----
+
+If you have the latest version of Python installed (as you should) you also have venv
+installed, since it is included by default in Python 3.3 and higher.
+
+First, create a virtual environment for the project:
 
 ::
 
-    $ pip install -U virtualenvwrapper
+    $ python3 -m venv <DIR>
 
-.. note::
+<DIR> can be located wherever it suits you (probably somewhere in your home directory).
+It must not be located in the dezentrale_web project directory.
 
-    If you installed :program:`virtualenvwrapper` for the first time, take your
-    time to read the installation documentation.
+Make sure that every time you are working on the project, you're working from within your virtualenv.
+
+If you're working with venv for the first time, take your time to read the `documentation
+<https://docs.python.org/3/library/venv.html>`_.
+
 
 EditorConfig
 ------------
@@ -93,7 +99,7 @@ read the file format and adhere to the defined styles.
 Development Setup
 =================
 
-Git 
+Git
 ----------------
 
 Clone the repository using `Git <https://git-scm.com/>`_:
@@ -112,11 +118,11 @@ Then change into the cloned repository:
 Install Python packages
 -----------------------
 
-First create a new virtualenv for the project using virtualenvwrapper:
+First activate the new virtualenv you created earlier for the project using venv:
 
 ::
 
-    $ mkvirtualenv -a `pwd` dezentrale_web
+    $ source <DIR>/bin/activate
 
 Now you can install the packages for development:
 
