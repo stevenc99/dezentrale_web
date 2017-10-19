@@ -146,7 +146,7 @@ And to create a new Django superuser:
 
 ::
 
-    $ envdir envs/dev/ python manage.py createsuperuser
+    $ make createsuperuser
 
 Start the development webserver
 -------------------------------
