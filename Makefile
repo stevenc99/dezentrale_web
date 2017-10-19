@@ -47,6 +47,8 @@ help:
 	@echo "  test-all                 to run unit tests on every Python version with tox"
 	@echo "  test-upload              to upload a release to test PyPI using twine"
 	@echo "  upload                   to upload a release using twine"
+	@echo "  makemigrations			  to create new migrations based on the changes you have made to your models"
+	@echo "	 createsuperuser   	      to create a user with admin rights for your local database"
 
 
 clean: clean-build clean-docs clean-test clean-pyc
@@ -148,3 +150,9 @@ test-upload:
 upload:
 	twine upload -s dist/*
 	python -c "import webbrowser; webbrowser.open('https://pypi.python.org/pypi/dezentrale_web')"
+
+makemigrations:
+	envdir envs/$(ENV) python manage.py makemigrations
+
+createsuperuser:
+	envdir envs/$(ENV) python manage.py createsuperuser
