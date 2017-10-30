@@ -2,45 +2,42 @@
 {% load wagtailcore_tags %}
 
 {% block content1 %}
+        <h3>Selbsthilfe</h3>
+        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten.</p>
+{% endblock content1 %}
 
-    <section id="banner">
-        <div class="content">
+{% block content2 %}
+        <h3>Ipsum adipiscing lorem</h3>
+        <p>Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein:</p>
+{% endblock content2 %}
+
+{% block content3 %}
+        <h3>der Blindtext.</h3>
+        <p>Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders </p>
+{% endblock content3 %}
+
+{% block content4 %}
+        <h3>»Lorem Ipsum«,</h3>
+        <p>Pellentesque egestas sem. Suspendisse modo ullamcorper feugiat lorem.</p>
+{% endblock content4 %}
+
+{% block banner %}
             <h1>Ipsum sed lorem</h1>
             <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br />sed arcu cras consecuat lorem ipsum dolor sit amet.</p>
-            <ul class="actions">
-                <li><a href="#one" class="button scrolly">Anker Knopf</a></li>
-            </ul>
-        </div>
-    </section>
-    <section id="three" class="wrapper">
-        <div class="inner flex flex-3">
-            <div class="flex-item box">
-                <div class="image fit">
-                    <img src="../media/pic01.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <h3>Consequat</h3>
-                    <p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p>
-                </div>
-            </div>
-            <div class="flex-item box">
-                <div class="image fit">
-                    <img src="../media/pic02.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <h3>Adipiscing</h3>
-                    <p>Morbi in sem quis dui placerat Pellentesque odio nisi, euismod pharetra lorem ipsum.</p>
-                </div>
-            </div>
-            <div class="flex-item box">
-                <div class="image fit">
-                    <img src="../media/pic03.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <h3>Malesuada</h3>
-                    <p>Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que metus vulputate sem magna.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-{% endblock content1 %}
+{% endblock banner %}
+
+{% block bottom1 %}
+            <h3>Consequat</h3>
+            <p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p>
+{% endblock bottom1 %}
+
+{% block bottom2 %}
+            <h3>Adipiscing</h3>
+            <p>Morbi in sem quis dui placerat Pellentesque odio nisi, euismod pharetra lorem ipsum.</p>
+{% endblock bottom2 %}
+
+{% block bottom3 %}
+            <h3>Malesuada</h3>
+            <p>Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que metus vulputate sem magna.</p>
+{% endblock bottom3 %}
+

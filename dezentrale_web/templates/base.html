@@ -8,70 +8,102 @@
 		<title>dezentrale e.V. - ein Hackerspace in Leipzig</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../static/css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
   <body>
 
-			<header id="header">
-				<nav class="left">
-					<a href="#menu"><span>Menu</span></a>
-				</nav>
-				<a href="index.html" class="logo">dezentrale</a>
-				<nav class="right">
-					<a href="https://status.dezentrale.space" class="button alt">Status</a>
-				</nav>
-			</header>
-
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Start</a></li>
-				</ul>
-				<ul class="actions vertical">
-					<li><a href="#" class="button fit">Knopf</a></li>
-				</ul>
-			</nav>
-
-            <section id="one" class="wrapper">
-                <div class="inner flex flex-3">
-                    <div class="flex-item left">
-                        <div>
-                            {% block content1 %}foo{% endblock content1 %}
-                        </div>
-                        <div>
-                            {% block content2 %}bar{% endblock content2 %}
-                        </div>
-                    </div>
-                    <div class="flex-item image fit">
-                        <img src="../media/hex.png" alt="hexa" />
-                    </div>
-                    <div class="flex-item right">
-                        <div>
-                            {% block content3 %}foobar{% endblock content3 %}
-                        </div>
-                        <div>
-                            {% block content4 %}barfoo{% endblock content4 %}
-                        </div>
-                    </div>
+  <header id="header">
+      <nav class="left">
+          <a href="#menu"><span>Menu</span></a>
+      </nav>
+      <a href="index.html" class="logo">dezentrale</a>
+      <nav class="right">
+          <a href="https://status.dezentrale.space" class="button alt">Status</a>
+      </nav>
+  </header>
+	  <nav id="menu">
+          <ul class="links">
+              <li><a href="index.html">Start</a></li>
+          </ul>
+          <ul class="actions vertical">
+              <li><a href="#" class="button fit">Knopf</a></li>
+          </ul>
+      </nav>
+  <section id="one" class="wrapper">
+      <div class="inner flex flex-3">
+          <div class="flex-item left">
+              <div>
+                  {% block content1 %}foo{% endblock content1 %}
+              </div>
+              <div>
+                  {% block content2 %}bar{% endblock content2 %}
+              </div>
+          </div>
+          <div class="flex-item image fit">
+              <img src="media/hex.png" alt="hexa" />
+          </div>
+          <div class="flex-item right">
+              <div>
+                  {% block content3 %}foobar{% endblock content3 %}
+              </div>
+              <div>
+                  {% block content4 %}barfoo{% endblock content4 %}
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="banner">
+        <div class="content">
+            {% block banner %}foo{% endblock banner %}
+            <ul class="actions">
+                <li><a href="#one" class="button scrolly">Anker Knopf</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="three" class="wrapper">
+        <div class="inner flex flex-3">
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="../media/pic01.jpg" alt="" />
                 </div>
-            </section>
+                <div class="content">
+                    {% block bottom1 %}{% endblock bottom1 %}
+                </div>
+            </div>
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="../media/pic02.jpg" alt="" />
+                </div>
+                <div class="content">
+                    {% block bottom2 %}{% endblock bottom2 %}
+                </div>
+            </div>
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="../media/pic03.jpg" alt="" />
+                </div>
+                <div class="content">
+                    {% block bottom3 %}{% endblock bottom3 %}
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<footer id="footer">
-				<div class="inner">
-					<h2>Schlauer Spruch</h2>
-					<ul class="actions">
-					  <li><span class="icon fa-phone"></span> (0341) 39296713</li>
-					  <li><span class="icon fa-envelope"></span> <a href="https://lists.dezentrale.space/mailman/listinfo">Mailinglisten</a></li>
-						<li><span class="icon fa-map-marker"></span><a href="https://www.openstreetmap.org/way/41760585"> Dreilindenstraße 19, 04177 Leipzig</a></li>
-					</ul>
-				</div>
-			</footer>
-
-			<script src="../static/js/jquery.min.js"></script>
-			<script src="../static/js/jquery.scrolly.min.js"></script>
-			<script src="../static/js/skel.min.js"></script>
-			<script src="../static/js/util.js"></script>
-			<script src="../static/js/main.js"></script>
-			<script src="../static/js/canvas.js"></script>
-
-	</body>
+	  <footer id="footer">
+          <div class="inner">
+              <h2>Schlauer Spruch</h2>
+              <ul class="actions">
+                  <li><span class="icon fa-phone"></span> (0341) 39296713</li>
+                  <li><span class="icon fa-envelope"></span> <a href="https://lists.dezentrale.space/mailman/listinfo">Mailinglisten</a></li>
+                  <li><span class="icon fa-map-marker"></span><a href="https://www.openstreetmap.org/way/41760585"> Dreilindenstraße 19, 04177 Leipzig</a></li>
+              </ul>
+          </div>
+      </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/canvas.js"></script>
+	  </body>
 </html>
