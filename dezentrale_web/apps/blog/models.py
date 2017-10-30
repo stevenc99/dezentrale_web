@@ -20,10 +20,12 @@ class BlogPage(Page):
         ('heading', blocks.CharBlock(classname="full title")),
         ('paragraph', blocks.RichTextBlock()),
     ])
+    intro = models.CharField(max_length=255, blank=True)
     author = models.CharField(max_length=255, blank=True)
 
     content_panels = Page.content_panels + [
         StreamFieldPanel('content'),
+        FieldPanel('intro', classname="full"),
         FieldPanel('author', classname="full"),
     ]
 
