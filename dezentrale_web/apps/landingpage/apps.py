@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class HomepageConfig(AppConfig):
-    name = 'dezentrale_web.apps.homepage'
+    name = 'dezentrale_web.apps.landingpage'
