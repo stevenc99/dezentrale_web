@@ -184,7 +184,6 @@ class Common(Configuration):
         # Custom
         'dezentrale_web.apps.wagtail_search',
         'dezentrale_web.apps.blog.apps.BlogConfig',
-        'dezentrale_web.apps.landingpage.apps.LandingpageConfig',
         # Wagtail
         'wagtail.wagtailforms',
         'wagtail.wagtailredirects',
