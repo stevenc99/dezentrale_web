@@ -4,11 +4,9 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.views import generic as generic_views
-
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
-
 
 urlpatterns = [
     url(r'^$', generic_views.TemplateView.as_view(template_name='landing_page.html'), name='landing_page'),
