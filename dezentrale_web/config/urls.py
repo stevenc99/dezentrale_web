@@ -8,7 +8,6 @@ from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
-
 urlpatterns = [
     url(r'^$', generic_views.TemplateView.as_view(template_name='landing_page.html'), name='landing_page'),
     url(r'^impressum/', generic_views.TemplateView.as_view(template_name='impressum.html'), name='impressum'),
