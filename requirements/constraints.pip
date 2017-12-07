@@ -1,1 +1,2 @@
 # This file controls which version of a requirement is installed.
+Django==1.11.8
