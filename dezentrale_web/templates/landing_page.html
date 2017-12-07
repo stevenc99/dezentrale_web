@@ -1,82 +1,82 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% block content %}
-  <!-- Keywords / Introduction and Logo -->
-  <section id="one" class="wrapper">
-    <div class="inner flex flex-3">
-      <div class="flex-item left">
-        <div>
-          <h3>Selbsthilfe</h3>
-          <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten.</p>
+    <!-- Keywords / Introduction and Logo -->
+    <section id="one" class="wrapper">
+        <div class="inner flex flex-3">
+            <div class="flex-item left">
+                <div>
+                    <h3>Selbsthilfe</h3>
+                    <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten.</p>
+                </div>
+                <div>
+                    <h3>Ipsum adipiscing lorem</h3>
+                    <p>Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich
+                        ein:</p>
+                </div>
+            </div>
+            <div class="flex-item image fit">
+                <img src="{% static 'images/hex.png' %}" alt="hexa"/>
+            </div>
+            <div class="flex-item right">
+                <div>
+                    <h3>der Blindtext.</h3>
+                    <p>Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders </p>
+                </div>
+                <div>
+                    <h3>»Lorem Ipsum«,</h3>
+                    <p>Pellentesque egestas sem. Suspendisse modo ullamcorper feugiat lorem.</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <h3>Ipsum adipiscing lorem</h3>
-          <p>Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich
-            ein:</p>
-        </div>
-      </div>
-      <div class="flex-item image fit">
-        <img src="{% static 'images/hex.png' %}" alt="hexa"/>
-      </div>
-      <div class="flex-item right">
-        <div>
-          <h3>der Blindtext.</h3>
-          <p>Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders </p>
-        </div>
-        <div>
-          <h3>»Lorem Ipsum«,</h3>
-          <p>Pellentesque egestas sem. Suspendisse modo ullamcorper feugiat lorem.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Banner Section -->
-  <section id="banner">
-    <div class="content">
-
-      <h1>Ipsum sed lorem</h1>
-      <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br/>
-        sed arcu cras consecuat loremipsum dolor sit amet.</p>
-      <ul class="actions">
-        <li><a href="#one" class="button scrolly">Anker Knopf</a></li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- Three picture boxes section -->
-  <section id="three" class="wrapper">
-    <div class="inner flex flex-3">
-      <div class="flex-item box">
-        <div class="image fit">
-          <img src="{% static 'images/pic01.jpg' %}" alt="a staircase"/>
-        </div>
+    <!-- Banner Section -->
+    <section id="banner">
         <div class="content">
-          <h3>Consequat</h3>
-          <p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p>
+
+            <h1>Ipsum sed lorem</h1>
+            <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br/>
+                sed arcu cras consecuat loremipsum dolor sit amet.</p>
+            <ul class="actions">
+                <li><a href="#one" class="button scrolly">Anker Knopf</a></li>
+            </ul>
+
         </div>
-      </div>
-      <div class="flex-item box">
-        <div class="image fit">
-          <img src="{% static 'images/pic02.jpg' %}" alt="room under construction"/>
+    </section>
+
+    <!-- Three picture boxes section -->
+    <section id="three" class="wrapper">
+        <div class="inner flex flex-3">
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="{% static 'images/pic01.jpg' %}" alt="a staircase"/>
+                </div>
+                <div class="content">
+                    <h3>Consequat</h3>
+                    <p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p>
+                </div>
+            </div>
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="{% static 'images/pic02.jpg' %}" alt="room under construction"/>
+                </div>
+                <div class="content">
+                    <h3>Adipiscing</h3>
+                    <p>Morbi in sem quis dui placerat Pellentesque odio nisi, euismod pharetra lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="flex-item box">
+                <div class="image fit">
+                    <img src="{% static 'images/pic03.jpg' %}" alt="mailbox"/>
+                </div>
+                <div class="content">
+                    <h3>Malesuada</h3>
+                    <p>Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que metus vulputate sem
+                        magna.</p>
+                </div>
+            </div>
         </div>
-        <div class="content">
-          <h3>Adipiscing</h3>
-          <p>Morbi in sem quis dui placerat Pellentesque odio nisi, euismod pharetra lorem ipsum.</p>
-        </div>
-      </div>
-      <div class="flex-item box">
-        <div class="image fit">
-          <img src="{% static 'images/pic03.jpg' %}" alt="mailbox"/>
-        </div>
-        <div class="content">
-          <h3>Malesuada</h3>
-          <p>Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que metus vulputate sem
-            magna.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 {% endblock content %}
 
