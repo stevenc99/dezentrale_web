@@ -1,7 +1,6 @@
 from django.db import models
-
-from wagtail.wagtailcore.models import Page
 from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.wagtailcore.models import Page
 
 
 class EventsIndexPage(Page):
