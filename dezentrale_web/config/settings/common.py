@@ -19,7 +19,7 @@ class BaseDir(object):
 class Common(Configuration):
     """Common configuration base class."""
 
-    SECRET_KEY = '(_j4e0=pbe(b+b1$^ch_48be0=gszglcgfzz^dy=(gnx=@m*b7'
+    SECRET_KEY = values.SecretValue()
 
     DEBUG = values.BooleanValue(False)
 
