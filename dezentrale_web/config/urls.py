@@ -20,11 +20,13 @@ urlpatterns = [
     url(r'^girokonto/', generic_views.TemplateView.as_view(template_name='giro.html'),
         name='giro'),
     url(r'^grappelli/', include('grappelli.urls')),
-    url(r'^django-admin/', include(admin.site.urls)),
-    # Wagtail
-    url(r'^admin/', include(wagtailadmin_urls)),
-    url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'^wagtail/', include(wagtail_urls)),
+
+    # Outcommenting all routes pointing to CMS functionality since
+    # current version is static only:
+    # url(r'^django-admin/', include(admin.site.urls)),
+    # url(r'^admin/', include(wagtailadmin_urls)),
+    # url(r'^documents/', include(wagtaildocs_urls)),
+    # url(r'^wagtail/', include(wagtail_urls)),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
